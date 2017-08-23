@@ -14,6 +14,7 @@ $(function() {
 	api.bind('open:finish', function() {
 		$('.hamburger').addClass('is-active');
 	});
+
 	api.bind('close:finish', function() {
 		$('.hamburger').removeClass('is-active');
 	});	
