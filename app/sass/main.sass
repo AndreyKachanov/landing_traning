@@ -85,8 +85,16 @@ section, header
 	background-position: center
 
 section
-	background-color: #FFF		 
-	 	 				
+	background-color: #FFF
+	&.inverse
+		color: #FFF
+		background-color: $dark
+	.h2
+		font-size: 30px
+		font-weight: 800
+		color: $accent
+		span
+			color: #fff	
 
 .img-responsive
 	display: block
@@ -399,5 +407,62 @@ $colors: $blue, $red, $accent
 .owl-carousel
 	.owl-item
 		backface-visibility: inherit			
+
+.s
+
+	&-king, &-review, &-partners
+		padding: 5% 0
+
+	&-king
+		p
+			margin: 30px 0
+			font-size: 18px
+
+.section-overley
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: $over
+		opacity: .92
+
+.fotorama
+	background-color: rgba($dark, .4)	
+	.fotorama__nav
+		&-wrap
+			position: absolute
+			bottom: 15px
+			padding: 0 30px
+			width: 100%	
+	&__thumb
+		border: 4px solid #fff
+		transition: border-color .8s ease
+		&-border
+			border-color: #3d3c3c
+	&__active
+
+	&__nav:after, &__stage:after, &__nav:before, &__stage:before
+		display: none
+	&__arr-
+		&-next, &-prev			
+			&::before
+				font-family: fontawesome
+				font-size: 32px
+		&-next
+			&::before
+				content: '\f105'
+		&-prev
+			&::before
+				position: absolute
+				left: 24px
+				content: '\f104'
+
+	&__active
+		.fotorama__thumb
+			border-color: #3d3c3c
+
 
 @import "media" // Всегда в конце
