@@ -3,7 +3,7 @@ $(function() {
 	$('#my-menu').mmenu({
 		extensions: [ 'theme-black', 'effect-menu-slide', 'pagedim-black'],
 		navbar: {
-			title: '<img src="img/logo-1.svg" alt="Салон красоты Смитлер">'
+			title: '<img src="img/logo.png" alt="Салон красоты Смитлер">'
 		},
 		offCanvas: {
 			position: 'right'
@@ -29,7 +29,7 @@ $(function() {
 		loop:true,
 		nav: true,
 		smartSpeed: 700,
-		navText: ['<i class="fa fa-angle-double-left"></i>', '<i class="fa fa-angle-double-right"></i>'],
+		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
 		responsiveClass: true,
 		dots: false,
 		responsive: {

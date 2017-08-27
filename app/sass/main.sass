@@ -256,7 +256,7 @@ html.mm-opened
 				&::before
 					color: $accent
 			&::before
-				content: '\f219'
+				content: '\f08a'
 				font-family: fontawesome
 				font-size: 12px
 				color: #fff
@@ -368,6 +368,7 @@ html.mm-opened
 		text-align: center	
 
 $colors: $blue, $red, $accent
+
 @for $i from 1 through length($colors)
 	.carousel-services .owl-item:nth-child(#{length($colors)}n+#{$i})
 		background-color: nth($colors, $i)
